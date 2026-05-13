@@ -1,0 +1,73 @@
+/*
+* YouTube Embeds
+*/
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+* Vue Fade
+*/
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+/*
+* Tags
+*/
+.tags-input input[type='text'] {
+    color: #fff !important;
+}
+
+.form-control > .tags-input-badge {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.typeahead-badges > .tags-input-badge {
+    margin-bottom: 1vh;
+}
+
+.form-control.tags-input {
+    min-height: 3.2rem !important;
+    height: auto !important;
+}
+
+// Cape Resizing (Nearest Neighbour)
+.texture-preview {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 2 / 1;
+}
+
+// Transparent background effect dark mode
+.preview-grid {
+    background: url('/images/preview-grid.png');
+    background-repeat: repeat;
+}

@@ -1,0 +1,18 @@
+# Logs
+*.log
+
+# Build
+node_modules
+dist
+
+# Editor directories and files
+.wrangler
+.vscode/*
+!.vscode/extensions.json
+.idea
+**/.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

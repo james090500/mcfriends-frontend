@@ -1,0 +1,82 @@
+//Some changes to bootstrap
+@use 'vars' as mcfriends;
+
+// Bootstrap colors
+$super-dark: mcfriends.$clr-dark-a0;
+$very-dark: mcfriends.$clr-surface-a0;
+$dark: mcfriends.$clr-surface-a10;
+$dark-light: mcfriends.$clr-surface-tonal-a10;
+
+$body-bg-dark: mcfriends.$clr-surface-a10;
+
+// Card
+$card-bg: mcfriends.$clr-surface-tonal-a10;
+$card-border-color: mcfriends.$clr-surface-tonal-a20;
+
+// Colors
+$theme-colors: (
+    'primary': mcfriends.$clr-info-a0,
+    //'secondary': hsla(0, 0%, 100%, 0.05),
+    'success': mcfriends.$clr-success-a0,
+    'danger': mcfriends.$clr-danger-a0,
+    'warning': mcfriends.$clr-warning-a0,
+    'discord': #5865f2,
+    'dark-light': $dark-light,
+    'very-dark': $very-dark,
+    'super-dark': $super-dark,
+);
+
+a {
+    text-decoration: none;
+}
+
+kbd {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    user-select: all !important;
+    padding: 0.1rem 0.5rem;
+    margin: 0 0.1rem;
+}
+
+/**
+* Buttons
+*/
+.btn-link {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: inherit;
+    vertical-align: unset;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+/**
+* Text
+*/
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.btn-option {
+    $bd-option: hsla(0, 0%, 100%, 0.05);
+    --bd-option-bg: hsla(0, 0%, 100%, 0.05);
+    --bd-option-rgb: rgba(0, 0, 255, 0.05);
+
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-option-bg);
+    --bs-btn-border-color: var(--bd-option-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{tint-color($bd-option, 10%)};
+    --bs-btn-hover-border-color: #{tint-color($bd-option, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-option-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{tint-color($bd-option, 20%)};
+    --bs-btn-active-border-color: #{tint-color($bd-option, 20%)};
+}
