@@ -2,11 +2,12 @@
     <section>
         <h1 class="text-center">Your Profile</h1>
         <hr />
-        <ErrorMessage :error="error" />
-        <pre>{{ attributes }}</pre>
+        <!-- <ErrorMessage :error="error" /> -->
+        <!-- <pre>{{ attributes }}</pre>
         <pre>{{ friends }}</pre>
-        <pre>{{ presence }}</pre>
+        <pre>{{ presence }}</pre> -->
         <pre>{{ signaling }}</pre>
+        <pre>{{ socketData }}</pre>
     </section>
 </template>
 
@@ -27,27 +28,35 @@ export default {
             friends: null,
             presence: null,
             signaling: null,
+            socketData: null,
         }
     },
     computed: {
         ...mapState(['user']),
     },
     created() {
-        // axios.get('/api/attributes').then((response) => {
-        //     this.attributes = response.data
-        // })
-        // axios.get('/api/friends').then((response) => {
-        //     this.friends = response.data
-        // })
-        // axios.get('/api/presence').then((response) => {
-        //     this.presence = response.data
-        // })
-        // axios.get('/api/signaling').then((response) => {
-        //     this.signaling = response.data
-        // })
-        axios.get('/api/socket').then((response) => {
-            console.log(response.data)
+        axios.get('/api/attributes').then((response) => {
+            this.attributes = response.data
         })
+        axios.get('/api/friends').then((response) => {
+            this.friends = response.data
+        })
+        axios.get('/api/presence').then((response) => {
+            this.presence = response.data
+        })
+        axios.get('/api/signaling').then((response) => {
+            this.signaling = response.data
+        })
+
+        this.startSocket()
+    },
+
+    methods: {
+        startSocket() {
+            axios.get('/api/socket').then((response) => {
+                console.log(response.data)
+            })
+        },
     },
 }
 </script>

@@ -39,19 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-2">
-                <strong>Contributors</strong>
-                <ul>
-                    <li
-                        v-for="contributor in contributors"
-                        :key="contributor.uuid"
-                    >
-                        <router-link :to="`/user/${contributor.uuid}`">
-                            {{ contributor.username }}
-                        </router-link>
-                    </li>
-                </ul>
-            </div>
+            <div class="col-lg-2"></div>
             <div class="col-lg-2">
                 <strong>Interact</strong>
                 <br />
@@ -88,16 +76,5 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            contributors: null,
-        }
-    },
-    created() {
-        this.axios.get('/api/contributors').then((response) => {
-            this.contributors = response.data
-        })
-    },
-}
+export default {}
 </script>
