@@ -129,7 +129,7 @@ export default {
 <style>
 main {
     background: #2a3142;
-    background: radial-gradient(at center top, #2a3142, #00071c);
+    background: radial-gradient(at center top, #1f302a, #182622);
 }
 
 #content {

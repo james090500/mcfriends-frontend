@@ -2,10 +2,12 @@
     <section>
         <div id="header" class="d-grid">
             <div class="row justify-content-center g-0 align-items-center">
-                <div class="col-lg-8">
+                <div class="text-center">
                     <div class="home-title">
                         <h1>Minecraft Friends.</h1>
-                        <p>Manage your friends online</p>
+                        <p>
+                            Manage your friends online and outside of Minecraft
+                        </p>
                         <div class="text-center">
                             <div class="d-inline-flex">
                                 <router-link
@@ -14,7 +16,7 @@
                                     to="/account/profile"
                                 >
                                     <font-awesome-icon icon="user" />
-                                    Go to Profile
+                                    Go to Your Profile
                                 </router-link>
                                 <router-link
                                     v-else
@@ -27,11 +29,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="offset-lg-1 col-lg-3 text-center min-vh-50 d-none d-lg-flex"
-                >
-                    <h1>Hi</h1>
                 </div>
             </div>
         </div>

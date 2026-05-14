@@ -19,6 +19,11 @@
                             Home
                         </router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/faq">
+                            FAQ
+                        </router-link>
+                    </li>
                 </ul>
             </div>
             <router-link

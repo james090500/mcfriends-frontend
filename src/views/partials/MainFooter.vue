@@ -11,10 +11,6 @@
                     <a target="_blank" href="https://github.com/james090500"
                         >james090500</a
                     >
-                    with help from
-                    <a target="_blank" href="https://github.com/Siriuo"
-                        >Siriuo</a
-                    >
                 </p>
                 <small>Like what I do? Feel free to support me!</small><br />
                 <a
@@ -25,20 +21,7 @@
                     on Ko-fi</a
                 >
             </div>
-            <div class="col-lg-2">
-                <strong>Legal</strong>
-                <ul>
-                    <li>
-                        <router-link to="/legal/terms"> Terms </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/legal/privacy"> Privacy </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/legal/rules"> Rules </router-link>
-                    </li>
-                </ul>
-            </div>
+            <div class="col-lg-2"></div>
             <div class="col-lg-2"></div>
             <div class="col-lg-2">
                 <strong>Interact</strong>
@@ -49,20 +32,6 @@
                     href="https://capecraft.net"
                     ><font-awesome-icon icon="cube" /> Join our Minecraft
                     Server</a
-                >
-                <a
-                    class="btn btn-discord mt-lg-2"
-                    target="_blank"
-                    href="/discord"
-                    ><font-awesome-icon :icon="['fab', 'discord']" /> Join our
-                    Discord</a
-                >
-                <a
-                    class="btn btn-option mt-lg-2"
-                    target="_blank"
-                    href="https://github.com/mcfriends"
-                    ><font-awesome-icon :icon="['fab', 'github']" /> Visit our
-                    GitHub</a
                 >
             </div>
         </div>

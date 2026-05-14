@@ -7,6 +7,7 @@ import LoginPage from '@/views/pages/account/LoginPage.vue'
 import ProfilePage from '@/views/pages/account/ProfilePage.vue'
 
 import NotFoundPage from '@/views/errors/NotFoundPage.vue'
+import FAQPage from '@/views/pages/FAQPage.vue'
 
 const routes = [
     {
@@ -16,6 +17,14 @@ const routes = [
             title: 'Home',
         },
         component: HomePage,
+    },
+    {
+        path: '/faq',
+        name: 'faq',
+        meta: {
+            title: 'FAQ',
+        },
+        component: FAQPage,
     },
     {
         path: '/account/login',
