@@ -37,7 +37,7 @@
             <div v-else class="btn-group">
                 <router-link to="/account/profile" class="btn btn-option">
                     <img
-                        :src="`https://api.minecraftapi.net/api/v2/profile/${user.uuid}/avatar?size=24&overlay=true`"
+                        :src="`https://api.minecraftapi.net/v3/profile/${user.uuid}/avatar?size=24&overlay=true`"
                         class="border rounded me-2"
                     />
                     {{ user.username }}

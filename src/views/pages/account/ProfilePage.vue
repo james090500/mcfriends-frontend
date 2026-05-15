@@ -139,7 +139,7 @@ export default {
             axios
                 .get('/api/attributes')
                 .then((response) => {
-                    const attributes = response.data
+                    const attributes = response.data.options
                     this.options.friends = attributes.friends == 'ENABLED'
                     this.options.invites = attributes.acceptInvites == 'ENABLED'
                 })
@@ -149,7 +149,7 @@ export default {
             axios
                 .get('/api/friends')
                 .then((response) => {
-                    this.friends = response.data
+                    this.friends = response.data.list
                 })
                 .catch(this.handleError)
         },

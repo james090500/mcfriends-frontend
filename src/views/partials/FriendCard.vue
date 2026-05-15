@@ -3,7 +3,8 @@
         <div class="row g-0">
             <div class="col-3 p-2">
                 <img
-                    :src="`https://api.minecraftapi.net/api/v2/profile/${friend.profileId}/avatar?overlay=true`"
+                    :src="`https://api.minecraftapi.net/v3/profile/${friend.profileId}/avatar?overlay=true`"
+                    class="img-fluid"
                 />
             </div>
             <div class="col-9 p-2">
